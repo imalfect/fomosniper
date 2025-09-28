@@ -134,3 +134,6 @@ This bot was made as a PoC (proof of concept), it is unlikely it will receive up
 ## License
 
 This code is licensed under [GNU General Public License version 3](https://opensource.org/license/gpl-3-0).
+
+<img width="1200" height="1200" alt="gradient-background-image" src="https://github.com/user-attachments/assets/b6d794bf-a789-42b8-a83b-66b60948501c" />
+
