@@ -18,7 +18,7 @@ The platform claims they implement _"Cutting edge anti-bot protection"_. Sadly, 
 
 Upon looking at the decompiled version of the bonding curve smart contract, we can see the following in the `buyTokens(uint256)` function:
 
-```sol
+```solidity
 function buyTokens(uint256 amount) public payable {
     require(msg.data.length - 4 >= 32);
     0x180c();
@@ -39,7 +39,7 @@ The third `require()` statement performs a full exit in case the mathematical eq
 
 The only mention of `0x93d71` in the decompiled code can be found here:
 
-```sol
+```solidity
 function creationBlock() public nonPayable {
     return 0x93d71;
 }
