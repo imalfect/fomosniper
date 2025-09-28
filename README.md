@@ -61,7 +61,7 @@ The `config.json` files requires a couple variables to set up, they're described
 
 **BPS in this context means basis point, 1 percent is 100 basis points**
 
-```json
+```js
 {
   "lfg": {
     "factoryAddress": "0xb19219AF8a65522f13B51f6401093c8342E27e9D" // The factory address for LFG, for mainnet leave as-is
