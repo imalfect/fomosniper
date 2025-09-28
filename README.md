@@ -64,14 +64,17 @@ The `config.json` files requires a couple variables to set up, they're described
 ```js
 {
   "lfg": {
-    "factoryAddress": "0xb19219AF8a65522f13B51f6401093c8342E27e9D" // The factory address for LFG, for mainnet leave as-is
+    // The factory address for LFG, for mainnet leave as-is
+    "factoryAddress": "0xb19219AF8a65522f13B51f6401093c8342E27e9D"
   },
   "connection": {
     "rpc": {
-      "url": "https://evmrpc.kasplex.org" // The JSON-RPC node url for the Kasplex L2, for mainnet leave as-is
+      // The JSON-RPC node url for the Kasplex L2, for mainnet leave as-is
+      "url": "https://evmrpc.kasplex.org"
     },
     "ws": {
-      "url": "wss://evmws.kasplex.org" // The WebSocket node url for the Kasplex L2, for mainnet leave as-is
+      // The WebSocket node url for the Kasplex L2, for mainnet leave as-is
+      "url": "wss://evmws.kasplex.org"
     },
     "network": {
       // Network configuration, for Kasplex L2, leave as-is
@@ -85,12 +88,19 @@ The `config.json` files requires a couple variables to set up, they're described
     }
   },
   "wallet": {
-    "privateKey": "0x0000000000000000000000000000000000000000" // the private key of the wallet to be used with the sniper bot, ensure it begins with 0x
+    // the private key of the wallet to be used with the sniper bot, ensure it begins with 0x
+    "privateKey": "0x0000000000000000000000000000000000000000"
   },
   "bot": {
-    "purchaseAmount": "69000000000000000000", // wei amount to use for purchasing each token, 1 kasplex L2 kaspa is equal to 10^18 wei
-    "slippageBps": 300, // slippage setting in bps (how much less you're willing to receive in case your transaction gets frontrun, 3-10% is a safe setting considering many snipers running)
-    "gasBribeBps": 2000 // EIP-1559 priority fee BPS, in case more transactions get included in the same block as yours, the one with the higher fee will get "executed" first, set to 20% as default (bps taken from base gas fee)
+    // wei amount to use for purchasing each token, 1 kasplex L2 kaspa is equal to 10^18 wei
+    "purchaseAmount": "69000000000000000000",
+    // slippage setting in bps (how much less you're willing to receive in case your transaction gets frontrun
+    // 3-10% is a safe setting considering many snipers running)
+    "slippageBps": 300,
+    // EIP-1559 priority fee BPS
+    // in case more transactions get included in the same block as yours, the one with the higher fee will get "executed" first,
+    // set to 20% as default (bps taken from base gas fee)
+    "gasBribeBps": 2000
   }
 }
 ```
